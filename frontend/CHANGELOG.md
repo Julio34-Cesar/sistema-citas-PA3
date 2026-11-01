@@ -2,6 +2,18 @@
 
 Registro de correcciones y mejoras realizadas desde la PA2 hasta la PA3.
 
+## [PA3 – 1.4.0] Despliegue y control de cambios – 01/11/2026
+### Agregado
+- Despliegue de la API en Render y de los clientes Angular y React en Vercel.
+- `frontend/vercel.json` y `panel-react/vercel.json` con reescritura de rutas para el enrutado de las aplicaciones de una sola página.
+- `.gitignore` en la raíz del proyecto (`node_modules`, `dist`, `.angular`, `.env`, `*.log`).
+- `README.md` actualizado con enlaces, roles, variables de entorno, ejecución y despliegue.
+### Cambiado
+- `frontend/src/app/config.ts` apunta a la API desplegada.
+- `CORS_ORIGINS` en Render incluye las URLs de Angular y React en Vercel.
+### Seguridad
+- Un archivo `backend/.env` y la carpeta `backend/node_modules` se habían subido por error a GitHub por un `.gitignore` mal escrito (espacios al inicio de cada línea). Se corrigió el `.gitignore`, se quitaron los archivos del seguimiento con `git rm --cached`, se reescribió el historial del repositorio y se cambiaron la contraseña del usuario de la base de datos en Atlas y el `JWT_SECRET`.
+
 ## [PA3 – 1.3.0] Panel React (T09, T10, T11) – 01/11/2026
 ### Agregado
 - Nuevo cliente `panel-react` (React 18 + Vite) que consume la misma API y la misma base de datos que Angular.
@@ -58,6 +70,4 @@ Registro de correcciones y mejoras realizadas desde la PA2 hasta la PA3.
 - Conexión a Atlas: se agregó la IP del equipo en *Network Access*; `server.js` solo inicia después de conectar.
 
 ## Pendiente
-- Despliegue del backend y de los dos clientes.
-- Repositorio en GitHub con README.
-- Informe técnico en PDF y banco de ejercicios.
+- Ninguno: despliegue, repositorio, informe técnico y banco de ejercicios completados.
