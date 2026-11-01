@@ -1,0 +1,22 @@
+<h2>Lista de citas</h2>
+<p class="ok" *ngIf="mensaje">{{ mensaje }}</p>
+<p class="error" *ngIf="error">{{ error }}</p>
+<table *ngIf="citas.length; else vacio">
+  <thead>
+    <tr>
+      <th>Cliente</th><th>Teléfono</th><th>Fecha</th><th>Hora</th><th>Motivo</th>
+      <th *ngIf="auth.esAdmin()">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of citas">
+      <td>{{ c.cliente }}</td><td>{{ c.telefono }}</td><td>{{ c.fecha }}</td><td>{{ c.hora }}</td><td>{{ c.motivo }}</td>
+      <!-- Solo el administrador puede editar y eliminar -->
+      <td *ngIf="auth.esAdmin()">
+        <a [routerLink]="['/citas/editar', c._id]">Editar</a>
+        <button (click)="eliminar(c)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #vacio><p>No hay citas registradas.</p></ng-template>

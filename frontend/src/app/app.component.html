@@ -1,0 +1,20 @@
+<nav class="menu">
+  <span class="logo">Gestión de Citas</span>
+
+  <ng-container *ngIf="auth.usuario$ | async as u; else invitado">
+    <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+    <a routerLink="/citas" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">Citas</a>
+    <a routerLink="/citas/nueva" routerLinkActive="activo">Nueva cita</a>
+    <span class="usuario">{{ u.nombre }} ({{ u.rol }})</span>
+    <button class="btn secundario" type="button" (click)="auth.logout()">Cerrar sesión</button>
+  </ng-container>
+
+  <ng-template #invitado>
+    <a routerLink="/login" routerLinkActive="activo">Iniciar sesión</a>
+    <a routerLink="/registro" routerLinkActive="activo">Registrarse</a>
+  </ng-template>
+</nav>
+
+<main class="contenedor">
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "6acef4fecce7295f1b498b5e"
+  },
+  "cliente": "Desiree Ardalan",
+  "telefono": "924377154",
+  "fecha": "2026-10-13",
+  "hora": "12:05",
+  "motivo": "Consulta de medicamentos",
+  "createdAt": {
+    "$date": "2026-10-14T03:20:30.246Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T06:21:34.651Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acef4fecce7295f1b498b5d"
+  },
+  "cliente": "Fernando Lopez",
+  "telefono": "982333212",
+  "fecha": "2026-10-13",
+  "hora": "04:22",
+  "motivo": "Tratamiento del Cancer",
+  "createdAt": {
+    "$date": "2026-10-14T03:20:30.241Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T03:40:28.530Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acef4fdcce7295f1b498b5c"
+  },
+  "cliente": "Kyle Graham-Dixon",
+  "telefono": "944462123",
+  "fecha": "2026-10-13",
+  "hora": "22:43",
+  "motivo": "Consulta General",
+  "createdAt": {
+    "$date": "2026-10-14T03:20:29.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T03:41:15.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acf094dcce7295f1b498b5f"
+  },
+  "cliente": "Joanne Wolovick",
+  "telefono": "987654321",
+  "fecha": "2026-10-13",
+  "hora": "09:00",
+  "motivo": "Consulta general",
+  "createdAt": {
+    "$date": "2026-10-14T04:47:09.431Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T04:48:53.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acf0994cce7295f1b498b60"
+  },
+  "cliente": "Luis Fernandez Zepeda",
+  "telefono": "912345678",
+  "fecha": "2026-10-15",
+  "hora": "11:00",
+  "motivo": "Revisión de resultados",
+  "createdAt": {
+    "$date": "2026-10-14T04:48:20.415Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T04:48:20.415Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acf09e9cce7295f1b498b61"
+  },
+  "cliente": "Marion Carolina Diaz",
+  "telefono": "956789123",
+  "fecha": "2026-10-13",
+  "hora": "22:00",
+  "motivo": "Control mensual",
+  "createdAt": {
+    "$date": "2026-10-14T04:49:45.905Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T04:49:45.905Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acf0a1fcce7295f1b498b62"
+  },
+  "cliente": "Herman Blaskovich",
+  "telefono": "945123678",
+  "fecha": "2026-10-13",
+  "hora": "21:30",
+  "motivo": "Seguimiento de tratamiento",
+  "createdAt": {
+    "$date": "2026-10-14T04:50:39.733Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T04:50:39.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6acf0a64cce7295f1b498b63"
+  },
+  "cliente": "Lila Martinez",
+  "telefono": "934567890",
+  "fecha": "2026-10-13",
+  "hora": "18:45",
+  "motivo": "Primera consulta",
+  "createdAt": {
+    "$date": "2026-10-14T04:51:48.944Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-14T04:51:48.944Z"
+  },
+  "__v": 0
+}]

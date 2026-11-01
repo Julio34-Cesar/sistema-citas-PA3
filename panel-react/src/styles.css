@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+
+.menu { background: #2d3e50; padding: 12px 16px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.menu .logo { color: #fff; font-weight: bold; margin-right: auto; }
+.menu a { color: #fff; text-decoration: none; padding-bottom: 2px; }
+.menu a.active { font-weight: bold; border-bottom: 2px solid #fff; }
+.usuario { color: #fff; font-size: 0.9rem; }
+.insignia { background: #f1c40f; color: #222; border-radius: 4px; padding: 1px 6px; margin-left: 6px; font-size: 0.7rem; font-weight: bold; }
+
+.contenedor { max-width: 960px; margin: 20px auto; padding: 0 16px; }
+.contenedor.estrecho { max-width: 460px; }
+
+.tarjetas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.tarjeta { background: #fff; padding: 16px 24px; border-radius: 8px; flex: 1 1 180px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.tarjeta h3 { font-size: 2rem; margin: 0; color: #2d3e50; }
+
+.tabla-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: 10px; border-bottom: 1px solid #ddd; text-align: left; }
+th { background: #e6ecf2; }
+
+form { display: grid; gap: 10px; background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+label { display: grid; gap: 4px; font-weight: bold; }
+input, textarea { width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 4px; font: inherit; }
+.buscador { margin-bottom: 12px; }
+
+.btn { display: inline-block; background: #2d3e50; color: #fff; border: 0; padding: 8px 14px; border-radius: 4px; cursor: pointer; text-decoration: none; font: inherit; }
+.btn:disabled { opacity: 0.6; cursor: default; }
+.btn.secundario { background: #6c757d; }
+.btn.peligro { background: #c0392b; }
+.acciones { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.ok { color: #1b7f3b; font-weight: bold; }
+.error { color: #c0392b; }
+
+@media (max-width: 600px) {
+  th:nth-child(2), td:nth-child(2) { display: none; }
+}

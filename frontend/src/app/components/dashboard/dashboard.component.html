@@ -1,0 +1,7 @@
+<h2>Panel de control</h2>
+<div class="tarjetas">
+  <div class="tarjeta"><h3>{{ total }}</h3><p>Citas registradas</p></div>
+  <div class="tarjeta"><h3>{{ hoy }}</h3><p>Citas de hoy</p></div>
+</div>
+<h3>Próximas citas</h3>
+<ul><li *ngFor="let c of proximas">{{ c.fecha }} {{ c.hora }} - {{ c.cliente }} ({{ c.motivo }})</li></ul>
