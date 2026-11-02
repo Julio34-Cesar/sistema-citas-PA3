@@ -11,6 +11,19 @@ Registro de correcciones y mejoras realizadas desde la PA2 hasta la PA3.
 ### Cambiado
 - `frontend/src/app/config.ts` apunta a la API desplegada.
 - `CORS_ORIGINS` en Render incluye las URLs de Angular y React en Vercel.
+
+   ## Base de datos y datos de prueba
+   - **Motor:** MongoDB Atlas, base `citasdb`, colecciones `citas` y `usuarios`.
+   - **Conexión:** variable `MONGO_URI` en `backend/.env` (ver `.env.example`).
+   - **Citas de prueba:** `datos/citas-prueba.json` (importables desde MongoDB Compass con *Add Data → Import JSON*) y exportación en `datos/citas-export.json`.
+   - **Usuarios de prueba:** `datos/usuarios-prueba.json`. Cuentas solo para evaluación:
+
+   | Rol | Correo | Contraseña |
+   |---|---|---|
+   | admin | admin.demo@example.com | CLAVE_DE_PRUEBA |
+   | usuario | usuario.demo@example.com | CLAVE_USUARIO_PRUEBA |
+
+
 ### Seguridad
 - Un archivo `backend/.env` y la carpeta `backend/node_modules` se habían subido por error a GitHub por un `.gitignore` mal escrito (espacios al inicio de cada línea). Se corrigió el `.gitignore`, se quitaron los archivos del seguimiento con `git rm --cached`, se reescribió el historial del repositorio y se cambiaron la contraseña del usuario de la base de datos en Atlas y el `JWT_SECRET`.
 
